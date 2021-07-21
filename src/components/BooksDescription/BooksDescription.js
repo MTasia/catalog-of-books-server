@@ -36,7 +36,7 @@ const BooksDescription = () => {
         <div className={style.bookName}>{book.name}</div>
         <div className={style.whiteText}>wrote by {book.author}</div>
         <div className={style.whiteText}>in {book.year} year</div>
-        <Link className={style.back} to="/items">
+        <Link className={style.back} to={`${process.env.PUBLIC_URL  }/items`}>
           Back
         </Link>
       </div>

@@ -26,7 +26,7 @@ const Book = ({ book }) => {
         </div>
       ) : (
         <div className={style.border}>
-          <Link className={style.item} to={`/items/${book.id}`}>
+          <Link className={style.item} to={`${process.env.PUBLIC_URL  }/items/${book.id}`}>
             <div className={style.book}>{book.name}</div>
             <div className={style}>Author: {book.author}</div>
             <div className={style}>Year of publication: {book.year}</div>
