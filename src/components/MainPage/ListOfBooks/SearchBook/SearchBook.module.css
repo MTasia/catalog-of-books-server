@@ -1,0 +1,46 @@
+.wrapper {
+  margin-left: 70px;
+}
+
+.input {
+  outline: none;
+  font-size: 20px;
+  border: 1px none #000000;
+  background: #ffffff;
+  border-bottom-style: solid;
+  margin-bottom: 50px;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+@media (min-width: 1010px) {
+  .form {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 1010px) {
+  .form {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    background: #ffffff;
+  }
+}
