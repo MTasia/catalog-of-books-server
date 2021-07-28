@@ -7,8 +7,7 @@
 .border {
   border: 1px solid #000000;
   padding: 10px 30px;
-  margin-left: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .editBlock {
@@ -43,28 +42,19 @@
   text-decoration: underline;
 }
 
-@media (min-width: 1010px) {
-  .border {
-    width: 90%;
-  }
-
-  .item {
-    list-style: none;
-    font-size: 24px;
-    color: #000000;
-    cursor: pointer;
-    text-decoration: none;
-    border: 1px;
-  }
+.item {
+  list-style: none;
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px;
 }
 
-@media (max-width: 1010px) {
-  .item {
-    list-style: none;
-    font-size: 24px;
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
+@media (min-width: 1010px) {
+  .border {
+    margin-left: 70px;
+    margin-right: 70px;
   }
 }
 
@@ -107,3 +97,4 @@
   padding: 5px 20px;
   margin-top: 10px;
 }
+

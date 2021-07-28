@@ -16,6 +16,7 @@ code {
 @media (min-width: 1010px) {
   .content {
     display: flex;
+    width: 100%;
   }
 }
 

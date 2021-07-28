@@ -63,14 +63,14 @@
 }
 
 @media (min-width: 1010px) {
-  form {
+  .form {
     width: 50%;
     background: #000000;
   }
 }
 
 @media (max-width: 1010px) {
-  form {
+  .form {
     width: 100%;
     background: #000000;
   }

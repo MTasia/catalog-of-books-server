@@ -22,44 +22,39 @@
 .footerTextLeft {
   font-size: 20px;
   margin-right: 10px;
-  margin-bottom: 0;
   margin-top: 20px;
 }
 
 .footerTextRight {
   font-size: 20px;
   margin-left: 10px;
-  margin-bottom: 0;
 }
 
 .footerTextEmail {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-size: 16px;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .ellipse {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #ffffff;
-  margin-left: -100px;
-  margin-top: 5px;
+  background: #000000;
+  margin-left: 170px;
+  margin-top: -5px;
 }
 
 .rightLine {
   height: 1px;
   width: 170px;
   background: #000000;
-  margin-top: -5px;
 }
 
 .leftLine {
   margin-left: 88%;
-  margin-top: 37px;
   height: 1px;
   width: 100px;
   background: #ffffff;
-  margin-bottom: 80px;
 }

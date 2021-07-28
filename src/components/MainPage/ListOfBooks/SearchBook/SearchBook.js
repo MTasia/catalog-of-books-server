@@ -26,7 +26,7 @@ const SearchBook = () => {
   };
 
   return (
-    <div className={style.wrapper}>
+    <div>
       <div className={style.header}>Books</div>
       <form className={style.form} onSubmit={submitHandler}>
         <input
