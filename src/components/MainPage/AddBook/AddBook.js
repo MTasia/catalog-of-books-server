@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {useCallback} from "react";
 import style from "./AddBook.module.css";
 import {validation} from "./validation";
-import {addBook} from "../../../redux/reducers/bookSlicer";
+import {addBookAsync} from "../../../redux/reducers/bookSlicer";
 
 const AddBook = () => {
     const initValues = {
@@ -15,9 +15,8 @@ const AddBook = () => {
     };
 
     const dispatch = useDispatch();
-
     const addBookConst = useCallback((newValues) => {
-        dispatch(addBook(newValues));
+        dispatch(addBookAsync(newValues));
     }, []);
 
     const formik = useFormik({

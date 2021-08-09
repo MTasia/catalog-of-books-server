@@ -4,6 +4,10 @@ export const getListOfBook = (state) => state.bookReducer.listOfBook;
 
 export const getFilter = (state) => state.bookReducer.searchFilter;
 
+export const getError = (state) => state.bookReducer.error;
+
+export const getStatus = (state) => state.bookReducer.status;
+
 export const getFilterBook = createSelector(
   [getListOfBook, getFilter],
   (listOfBook, searchFilter) => {

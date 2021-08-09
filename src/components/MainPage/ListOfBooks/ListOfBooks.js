@@ -6,6 +6,7 @@ import style from "./ListOfBooks.module.css"
 import {getFilterBook} from "../../../redux/selectors/bookSelector";
 
 const ListOfBooks = () => {
+
     const books = useSelector(getFilterBook);
 
     return <div className={style.listOfBooks}>

@@ -1,19 +1,20 @@
 import { configureStore } from "@reduxjs/toolkit";
 import bookReducer from "./reducers/bookSlicer";
-import { loadState, saveState } from "./localStorage";
+// import { loadState, saveState } from "./localStorage";
 
 const reducer = {
   bookReducer,
 };
-const preloadedState = loadState();
+
+// const preloadedState = loadState();
 
 export const store = configureStore({
   reducer,
-  preloadedState,
+//  preloadedState,
 });
 
-store.subscribe(() => {
-  saveState({
-    bookReducer: store.getState().bookReducer,
-  });
-});
+// store.subscribe(() => {
+//   saveState({
+//     bookReducer: store.getState().bookReducer,
+//   });
+// });
