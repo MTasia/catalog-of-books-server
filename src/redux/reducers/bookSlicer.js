@@ -4,7 +4,7 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 export const fetchListOfBooks = createAsyncThunk("items/getItems",
     async (_, {rejectWithValue}) => {
         try {
-            const response = await fetch("http://localhost:3001/items");
+            const response = await fetch("https://my-json-server.typicode.com/MTasia/catalog-of-books-server/items");
             if (!response.ok) {
                 throw new Error("Server error")
             }
@@ -20,7 +20,7 @@ export const deleteBookAsync = createAsyncThunk(
     // eslint-disable-next-line consistent-return
     async (id, {rejectWithValue, dispatch}) => {
         try {
-            const response = await fetch(`http://localhost:3001/items/${id}`, {
+            const response = await fetch(`https://my-json-server.typicode.com/MTasia/catalog-of-books-server/items/${id}`, {
                 method: 'DELETE',
             })
 
@@ -44,7 +44,7 @@ export const addBookAsync = createAsyncThunk(
         try {
             const {id, name, author, year, description} = newValues;
 
-            const response = await fetch(`http://localhost:3001/items`, {
+            const response = await fetch(`https://my-json-server.typicode.com/MTasia/catalog-of-books-server/items`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export const endEditedBookAsync = createAsyncThunk(
         try {
             const {id, name, author, year, description} = newValues;
 
-            const response = await fetch(`http://localhost:3001/items/${id}`, {
+            const response = await fetch(`https://my-json-server.typicode.com/MTasia/catalog-of-books-server/items/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ export const addDescriptionAsync = createAsyncThunk(
     // eslint-disable-next-line consistent-return
     async ({id, description}, {rejectWithValue, dispatch}) => {
         try {
-            const response = await fetch(`http://localhost:3001/items/${id}`, {
+            const response = await fetch(`https://my-json-server.typicode.com/MTasia/catalog-of-books-server/items/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

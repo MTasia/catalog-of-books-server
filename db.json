@@ -1,14 +1,6 @@
 {
   "items": [
     {
-      "id": "1",
-      "name": "love in the Time of Cholera",
-      "author": "Gabriel García Márquez",
-      "year": 1985,
-      "edited": false,
-      "description": "The story, which treats the themes of love, aging, and death, takes place between the late 1870s and the early 1930s in a South American community troubled by wars and outbreaks of cholera. It is a tale of two lovers, artistic Florentino Ariza and wealthy Fermina Daza, who reunite after a lifetime apart."
-    },
-    {
       "id": "2",
       "name": "Three Comrades",
       "author": "Erich Maria Remarque",
