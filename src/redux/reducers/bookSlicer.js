@@ -153,9 +153,10 @@ const bookSlicer = createSlice({
     initialState: defaultState,
     reducers: {
         addBook(state, action) {
+            const newBook = [action.payload]
             return {
                 ...state,
-                listOfBook: state.listOfBook.concat(action.payload),
+                listOfBook: newBook.concat(state.listOfBook),
             };
         },
         changeFilter(state, action) {
